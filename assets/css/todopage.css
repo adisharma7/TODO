@@ -1,0 +1,253 @@
+body{
+
+	background-image: linear-gradient(120deg,#ffde22,#ff8928);
+ min-height: 100vh;
+   
+}
+
+.plate {
+   margin-top:100px;
+   width: 100%;
+   text-align: center;
+
+ 
+
+}
+.shadow {
+ color: #ff414e ;
+ font-family: Cursive;
+ font-weight: bold;
+ text-shadow:
+   -3px -3px 0 #222,
+   3px -3px 0 #222,
+   -3px 3px 0 #222,
+   3px 3px 0 #222,
+   4px 4px 0 #fff,
+   5px 5px 0 #fff,
+   6px 6px 0 #fff,
+   7px 7px 0 #fff;
+ line-height: 0.8em;
+ letter-spacing: 0.1em;
+ transform: scaleY(0.7);
+ -webkit-transform: scaleY(0.7);
+ -moz-transform: scaleY(0.7);
+ margin:0;
+
+
+}.text1 {
+ font-size: 120px;
+ text-shadow: 0 0 15px #ff8928;
+}	
+
+.info{
+	max-width: 800px;
+ margin: auto;
+ padding: 10px;
+
+ /*margin-top: 5%;
+   text-align: center;
+   width: 90%;
+   height:500px;   
+   background: yellow;
+   color:#fff;
+   top:50%;
+   left:50%;
+   position: absolute;
+   transform: translate(-50%,-50%); 
+   box-sizing: border-box;  
+   padding: 20px 30px; 
+   border-radius: 10%;*/
+}
+
+
+.info #form {
+   text-align: center;
+   width: 50%;
+   color:#ff414e ;
+
+   font-size: 25px
+
+}
+
+.info #form p{
+  
+
+   margin:20px;
+   padding:0;
+   font-weight: bold;
+   text-shadow: 0 0 15px #ff8928; 
+   }
+
+.info #form input[type="text"]{
+
+   width:50%;
+   height:40%;
+   margin-top: 30px;
+   margin-bottom: 100px;
+   
+	   border:none;
+	   border-bottom: 1px solid #fff;
+	   background: transparent;
+	   outline: none;
+	   height: 40px;
+	   color: blue;
+	   font-size:16px;
+	   
+
+
+   }
+
+   .info #form label{
+	   margin:100px;
+   padding:0;
+   font-weight: bold; 
+   text-align: center;
+   color: #ff414e;
+   text-shadow: 0 0 15px #ff8928;
+
+   }
+
+
+   .info #form #ntask{
+	   width:50%;
+   height:40%;
+   margin-top: 30px;
+   margin-bottom: 100px;
+   
+	   border:none;
+	   border-bottom: 1px solid #fff;
+	   background: transparent;
+	   outline: none;
+	   height: 40px;
+	   color:grey;
+	   font-size:16px;
+
+	   } 
+
+	   .info #form #ntask option{
+	   text-align: right;
+	   color: black;
+	 
+			   }
+
+   .info #form input[ type="date" ]{
+   width:50%;
+   height:40%;
+   margin-top: 30px;
+   margin-bottom: 100px;
+   
+	   border:none;
+	   border-bottom: 1px solid #fff;
+	   background: transparent;
+	   outline: none;
+	   height: 40px;
+	   color:grey;
+	   font-size:16px;
+	   
+
+			   }
+
+			   .info #form #add{
+				   color: black;
+				   text-align: center;
+				   width:87%;
+				   margin: 50px;
+			   }
+
+			   .info #form #add button[type="submit"]{
+				   border :none;
+	   outline: none;
+	   height: 40px;
+	   color: #ffde22;
+	   background:#fff;
+	   font-size:18px;
+			   }
+			   .info #form #add button[type="submit"]:hover{
+	   cursor: pointer;
+	   background: #ffde22;
+	   color:#fff;
+	   box-shadow: 0 0 15px #ff414e;
+
+   }
+
+
+.info #pending{
+   text-align: center;
+	max-width: 800px;
+ margin: auto;
+ padding: 10px;
+
+}
+.info #pending li {
+
+   text-align: center;
+   background-size: 150px ;
+   margin: 10px;
+   text-align: center;
+	display: block;
+	box-shadow: 0 0 15px #ffde22;
+   
+
+}
+
+
+.info #pending li:hover{
+   background-color:  #ff414e;
+   box-shadow: 0 0 30px #ffde22;
+
+
+}
+
+
+
+
+.info #pending #details{
+   justify-content: space-between ;
+}
+
+/*#left{
+text-align: left;
+display: inline-block;
+}
+
+#right{
+   text-align: right;
+display: inline-block;
+   }*/
+
+   .info #pending #delete{
+				   color: black;
+				   text-align: center;
+				   width:87%;
+				   margin: 50px;
+			   }
+
+			   .info #pending #delete button[type="submit"]{
+				   border :none;
+	   outline: none;
+	   height: 40px;
+	   color: #ffde22;
+	   background:#fff;
+	   font-size:18px;
+			   
+			   }
+			   .info #pending #delete button[type="submit"]:hover{
+	   cursor: pointer;
+	   background: #ffde22;
+	   color:#fff;
+	   box-shadow: 0 0 15px #ff414e;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /===========================/ */

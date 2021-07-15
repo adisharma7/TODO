@@ -1,0 +1,140 @@
+<html>
+ <head>
+     <title>
+         new todo
+     </title>
+
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+      <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"> -->
+     <link rel="stylesheet" type="text/css" href="css/todopage.css">
+     <link rel="icon" href="images/todoimg1.jpeg" type="image/x-icon" />
+ </head>
+
+
+ <body class ="animated fadeInDownBig">
+
+
+
+     
+     <div  class=  " plate shadow text1 " >
+         TO-DO LIST
+     </div>
+   
+<!-- ================================================================================ -->
+
+   <div class="info">
+    <span id="form">
+     
+     <!--  <div id="description"> 
+ -->
+        <form action="/create-task" method="POST" >
+          <p>Describe the Work </p>
+          <input type="text" name="desc"  placeholder="WHAT DO YOU WANT TO DO!!!!!" required>
+        
+        <!-- <button type="submit"> submit</button> -->
+<br>
+      
+
+<!-- =============================================================================== -->
+               
+              <label for="list" >Choose a category</label>
+              <br>
+              <select name="nameoftask" id="ntask">
+              <option value="school">School</option>
+              <option value="work">Work</option>
+              <option value="market">Market</option>
+              <option value="home">Home</option>
+              <option value="others">Other</option>
+
+            </select>
+
+            <br>
+
+               
+
+
+<p >Select Date</p>
+
+
+                        <input type="date" name="date" id ="date">
+                        <!-- <input type="submit" > -->
+
+
+
+                        <div id="add">
+
+                            <button type="submit" id="add-button"> ADD TASK </button>
+                 
+                             </div>
+                 
+                 
+                                 
+
+
+
+
+                    </form>
+            
+
+
+
+        
+      </span>
+
+   
+
+
+
+             <span id="pending">
+
+
+        <% for( let i of taskList){%>
+
+
+            <li>
+
+                
+               <div id="details">
+
+                <p><i class="fas fa-audio-description"></i> <%= i.desc%></p>
+            
+                <p><i class="fas fa-calendar-alt"></i> <%=i.date%></p>
+
+                
+
+            </div>
+
+            <p>  <%=i.nameoftask%></p>
+
+            <div>
+
+
+            </div>
+
+           
+            <div id="delete">
+                                 
+                 
+                <a href="/delete/?id=<%= i.id%>"> <button type="submit" id="delte-button"> DELETE TASK</button>
+
+                </a>
+      
+                  </div>
+            
+            </li>
+
+            
+        <% }%>
+
+
+           </ul>
+
+            
+         </span>
+
+          </body>
+
+</html>
